@@ -9,7 +9,7 @@ class App extends Component{
 //fetch('https://jsonplaceholder.typicode.com/users')
  //           .then(response =>response.json())
  //           .then(users => this.setState({force: users}));
-  return (
+  render (){
     <div className="App">
       <header className="App-header">
         <img src={sw} className="App-logo" alt="logo" />
@@ -26,7 +26,7 @@ class App extends Component{
         </a>
       </header>
     </div>
-  );
+  }
 }
 
 export default App;
