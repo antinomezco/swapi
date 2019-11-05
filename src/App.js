@@ -2,10 +2,31 @@ import React from 'react';
 import sw from './sw.png';
 import './App.css';
 
-class Welcome extends React.Component {
-  render() {
-    return <h1>Hello, {this.props.name}</h1>;
-  }
+class App extends Component{
+    constructor() {
+        super()
+    }
+//fetch('https://jsonplaceholder.typicode.com/users')
+ //           .then(response =>response.json())
+ //           .then(users => this.setState({force: users}));
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={sw} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
