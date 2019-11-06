@@ -5,9 +5,9 @@ class App extends Component {
     state = {
     contacts: []
     }
-
+    
   componentDidMount() {
-    fetch('https://swapi.co/api/people/1/')
+    fetch('http://jsonplaceholder.typicode.com/users')
     .then(res => res.json())
     .then((data) => {
       this.setState({ contacts: data })
