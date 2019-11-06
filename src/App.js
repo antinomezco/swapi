@@ -6,13 +6,6 @@ class App extends Component {
     contacts: []
     }
 
-const urls = [
-  'https://swapi.co/api/people/1/?format=json',
-  'https://swapi.co/api/people/2/?format=json',
-  'https://swapi.co/api/people/3/?format=json',
-  'https://swapi.co/api/people/4/?format=json'
-]
-
   componentDidMount() {
     fetch('https://swapi.co/api/people/1/')
     .then(res => res.json())
