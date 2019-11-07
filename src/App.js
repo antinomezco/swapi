@@ -2,19 +2,18 @@ import React, {Component} from 'react';
 import Contacts from './components/contacts';
 
 class App extends Component {
-
     render() {
         return (
             <Contacts contacts={this.state.contacts} />
         )
     }
-    
+
     state = {
         contacts: []
     };
 
     componentDidMount() {
-        fetch('https://swapi.co/api/films/1/')
+        fetch('https://jsonplaceholder.typicode.com/users')
             .then(res => res.json())
             .then((data) => {
                 this.setState({ contacts: data })
@@ -22,4 +21,5 @@ class App extends Component {
             .catch(console.log)
     }
 }
+
 export default App;
